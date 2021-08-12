@@ -24,7 +24,9 @@ console.log('A little about me:', me);
     created above to set its value.
   - Console.log fullName
 */
-let fullName = me[firstName] + " " + me[lastName];
+let fName = me.firstName;
+let lName = me.lastName;
+let fullName = (fName + ' ' + lName)
 console.log(fullName);
 
 
