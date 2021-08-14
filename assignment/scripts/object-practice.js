@@ -8,6 +8,7 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
+//comment; created meObj with my info
 const meObj = {
   firstName: 'Russell',
   lastName: 'Barr',
@@ -28,7 +29,7 @@ console.log('A little about me:', meObj);
 //comment; created fullName var
 let fName = meObj.firstName;
 let lName = meObj.lastName;
-let fullName = (fName + ' ' + lName)
+let fullName = ('My full name is ,' fName + ' ' + lName + '.')
 console.log(fullName);
 
 
@@ -38,8 +39,8 @@ console.log(fullName);
   - Console.log your last favorite food
 */
 //comment;fav food, first & last
-console.log('My first favorite food is ' + meObj['favThreeFoods'][0]);
-console.log('My third favorite food is ' + meObj['favThreeFoods'][2]);
+console.log('My first favorite food is ' + meObj['favThreeFoods'][0] + '.');
+console.log('My third favorite food is ' + meObj['favThreeFoods'][2] + '.');
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -47,7 +48,7 @@ console.log('My third favorite food is ' + meObj['favThreeFoods'][2]);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count.
 */
-//comment; updated property of object shoeCount
+//comment; updated property shoeCount of object meObj
 console.log('My current shoe count is: ' + meObj['shoeCount']);
 meObj['shoeCount'] = meObj['shoeCount'] + 1;
 console.log('My updated shoe count is: ' + meObj['shoeCount']);
@@ -59,3 +60,6 @@ console.log('My updated shoe count is: ' + meObj['shoeCount']);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+//comment; adding new property 'favoriteColor' to object meObj
+meObj['favoriteColor'] = ['purple'];
+console.log('My favorite color is ' + meObj['favoriteColor'] + '.');
