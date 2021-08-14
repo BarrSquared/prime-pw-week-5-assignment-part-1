@@ -8,15 +8,15 @@ console.log('***** Object Practice *****')
   - Give it  a numeric 'shoeCount' property
   - Also give it an array 'favThreeFoods'
 */
-const me = {
-  firstName : 'Russell',
-  lastName : 'Barr',
-  hasSiblings : true,
-  shoeCount : 4,
-  favThreeFoods : ['sushi', 'tacos', 'tikka masala']
+const meObj = {
+  firstName: 'Russell',
+  lastName: 'Barr',
+  hasSiblings: true,
+  shoeCount: 4,
+  favThreeFoods: ['sushi', 'tacos', 'tikka masala']
   // TODO - add properties here
 };
-console.log('A little about me:', me);
+console.log('A little about me:', meObj);
 
 /* 2. Accessing object properties.
   - Create a variable called fullName
@@ -24,8 +24,10 @@ console.log('A little about me:', me);
     created above to set its value.
   - Console.log fullName
 */
-let fName = me.firstName;
-let lName = me.lastName;
+//creating vars for fullName var
+//comment; created fullName var
+let fName = meObj.firstName;
+let lName = meObj.lastName;
 let fullName = (fName + ' ' + lName)
 console.log(fullName);
 
@@ -35,8 +37,9 @@ console.log(fullName);
   - Console.log your first favorite food
   - Console.log your last favorite food
 */
-
-
+//comment;fav food, first & last
+console.log('My first favorite food is ' + meObj['favThreeFoods'][0]);
+console.log('My third favorite food is ' + meObj['favThreeFoods'][2]);
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -44,6 +47,10 @@ console.log(fullName);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count.
 */
+//comment; updated property of object shoeCount
+console.log('My current shoe count is: ' + meObj['shoeCount']);
+meObj['shoeCount'] = meObj['shoeCount'] + 1;
+console.log('My updated shoe count is: ' + meObj['shoeCount']);
 
 
 /* 5. Add a new property to an existing object.
